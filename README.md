@@ -2,9 +2,9 @@
 
 This project is a task of Robocup@Home competition, it can be used to control Tiago and grasp a bottle at certain position.
 
-##Guidence
+## Guidence
 
-**Two Steps before compiling and running the code.**
+**Two Steps :+2: before compiling and running the code.**
 
 1. install Darknet-ROS from [GitHub Page](https://github.com/leggedrobotics/darknet_ros) as package
 
