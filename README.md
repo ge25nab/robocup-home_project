@@ -7,12 +7,12 @@ This project is a subtask of Robocup@Home competition, it can be used to control
 In this project, poeple could point to a specific object, and then ask Tiago to grasp it and hand it over. We detect hand directions by using pose estimation, and then use linear regression to judge which object is pointed at. 
 
 #### Simple principle
-<div align=right><img src="https://github.com/ge25nab/robocup-home_project/blob/master/images/out.png" width="600" height="450" /></div>
+<div align=center><img src="https://github.com/ge25nab/robocup-home_project/blob/master/images/out.png" width="600" height="450" /></div>
 
 As shown in the picture, a blue line is detected from left hands points. Objects are highlited with squares and then the wanted object could be selected. 
 
 #### Node Communication  :ant:
-![image](https://github.com/ge25nab/robocup-home_project/blob/master/images/node_communucation.png)
+<div align=center><img src="https://github.com/ge25nab/robocup-home_project/blob/master/images/node_communucation.png"/></div>
 
 The communication between different nodes are shown in the figure above.
 
