@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <arg name="robot" 		default="steel"/>
+  <!-- <arg name="world"		default="simulation"/> -->
+  <!-- <arg name="map"            default="$(env HOME)/.pal/tiago_maps/config1"/> -->
+  <!-- <arg name="map"            default="$(env HOME)/.pal/tiago_maps/configurations/$(arg world)"/> -->
+  <arg name="gzpose" 		default="-x 0.0 -y 0.0 -z 0.0 -R 0.0 -P 0.0 -Y 0.0"/>
+  <arg name="global_planner" 	default="global_planner"/>
+  <arg name="local_planner" 	default="eband"/>
+  <arg name="localization" 	default="amcl"/>
+  <arg name="rviz"		default="true"/>
+
+  <!-- <include file="$(find tiago_2dnav_gazebo)/launch/tiago_navigation.launch">
+    <arg name="robot" 		value="$(arg robot)"/>
+    <arg name="gzpose"		value="$(arg gzpose)"/>
+    <arg name="localization"	value="$(arg localization)"/>
+    <arg name="rviz"		value="$(arg rviz)"/>
+    <arg name="gzclient"	value="True"/>
+    <arg name="public_sim" value="True"/>
+    </include> -->
+  <include file="$(find grasp)/launch/grasp.launch">
+    </include>
+  <include file="$(find from2dto3d)/launch/segment.launch">
+    </include>
+  
+    
+  <node name="navigation_tiago_node" pkg="navigation_tiago" type="navigation_tiago_node" output="screen"/>
+  <node pkg="navigation_tiago" type="recognition_node" name="recognition_node" output="screen">
+    </node>
+
+</launch>

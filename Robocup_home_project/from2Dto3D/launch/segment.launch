@@ -1,0 +1,5 @@
+
+<launch>
+    <node pkg="from2dto3d" type="node_2Dto3D" name="node_2Dto3D" output="screen">
+    </node>
+</launch>

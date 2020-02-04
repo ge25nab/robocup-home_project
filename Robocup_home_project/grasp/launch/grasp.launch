@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+<node pkg="grasp" type="grasp" name="grasp" output="screen">
+    </node>
+<node pkg="grasp" type="tftransform" name="tf2" output="screen">
+</node>
+</launch>
